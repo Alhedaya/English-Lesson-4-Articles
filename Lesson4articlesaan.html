@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 4 - Articles a, an & the</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); height: 545vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:320px;
+  height: 80px;  
+  border-width: 2px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+.p{text-align: center; font-size: 33px;}
+.p1 {text-align: left; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;}
+.p2{font-size: 40px;}
+
+.div1 {display: grid; grid-template-columns: 1fr 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr 1fr;}
+.div3  {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div4 {text-align: left; font-size: 30px; padding-left: 45px;}
+.div5 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+
+@media screen and (max-width: 1000px){
+.buttons{width: 150px;
+height: 70px;
+ text-align: Center;
+font-size: 15px; 
+ cursor:pointer;
+margin-top: 10px;
+margin-left:10px;
+border-radius: 7px;
+box-shadow: 2px 2px 3px grey;
+border:none;
+background-color: #D1E4C4;
+}
+.buttons:hover{  background-color: #F1F7ED;}
+.buttons:active{  background-color: #D1E4C4;}
+
+
+.p{text-align: center; font-size: 25px;}
+.p1 {font-size: 20px;}
+.p2 {font-size: 25px;}
+
+
+.div1 {display: grid; grid-template-columns: 1fr; }
+.div2 {display:grid; grid-template-columns: 1fr ;}
+.div3  {display: grid; grid-template-columns:  1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:25px;
+ font-weight:bold;
+ cursor:pointer; 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips"> Articles: a &middot; an &middot; the  <span class="tooltipstext"> <p> <b>a&bull;an</b> is used to modify non-specific or non-particular nouns.<br><b>the</b> is used to refer to specific or particular nouns.</p></span></h1>
+
+<p class="p2" style="text-align: center; ">Articles are words that identify a noun as being specific or unspecific.</p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr;">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center;">
+
+<button onmousedown="sound1.play()" class="buttons"> the &harr; definite article </button>
+<button onmousedown="sound2.play()" class="buttons"> a &harr; indefinite article </button>
+<button onmousedown="sound3.play()" class="buttons"> an &harr; indefinite article </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center;">
+
+<button onmousedown="sound4.play()" class="buttons"> the book. </button>
+<button onmousedown="sound5.play()" class="buttons">  a pen. </button>
+<button onmousedown="sound6.play()" class="buttons"> an apple. </button>
+</div>
+
+</div>
+
+<p class="p2" style="text-align: center; ">English has two types of articles: definite and indefinite.</p>
+
+<div class="div2" style=" ">
+
+<div style="box-shadow: 1px 0 1px grey;">
+
+<p style="text-align: center; font-size: 30px;"> The definite article </p>
+
+<p style="text-align: left; font-size: 30px; padding: 5px;">
+<b>The</b> &bull; limits the meaning of a noun to one particular thing.<br><br>
+<b>The</b> &bull; can be used with singular, plural, or uncountable nouns.</p>
+
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; ">
+
+<p style="text-align: center; font-size: 30px;"> The indefinite article </p>
+
+<p style="text-align: left; font-size: 30px; padding-left: 10px;">
+<b>a&middot;an</b> &bull; indicates that a noun refers to a general idea or category of a thing rather than a specific thing.<br><br>
+<b>a&middot;an</b> &bull; can only be used with singular nouns.
+  </p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="div3" style=" ">
+
+<p style="text-align: center; font-size: 33px;"></p>
+
+
+<p class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+“Are you going to <b>the</b> party this weekend?”<br>
+<b>The</b> &bull; tells you that your friend is referring to a specific party that both of you already know about. </p>
+
+<p  class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> “Should I bring <b>a</b> gift to the party?”<br>
+<b>a</b> &bull; tells your friend that you are not asking about a specific type of gift
+</p>
+
+<p  class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">	
+“I am going to bring <b>an</b> apple pie,”<br> 
+<b>an</b> &bull; tells you that she is not talking about a particular apple pie. </p>
+
+<p  class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+<b>a</b> &bull; when it precedes a word that begins with a consonant sound.<br>
+<b>an</b> &bull; when it precedes a word that begins with a vowel sound.<br><br>
+<u>Exceptions</u>:<br>
+<b>a</b> &bull; When it precedes a word that begins with a vowel but pronounced with a consonant sound.<br>
+<b>an</b> &bull; When it precedes a word that begins with a consonant but pronounced with a vowel sound.<br><br>
+
+“She is <b>a</b> <u>U</u>nited States senator.” the U &harr; Y<br>
+“My mother is <b>an</b> <u>h</u>onest woman.” the H &harr; Silent
+</p>
+
+<p  class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+We do not use an indefinite article with plural nouns or uncount nouns:<br><br>
+She was wearing <b>blue shoes</b>. plural noun<br>
+She has <b>short, blonde hair</b>. uncount noun
+ </p>
+
+
+
+<p  class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> Definite Article: <b>The</b><br>
+
+Here are some key points about the definite article:<br><br>
+
+&bull; Specificity: <b>The</b> is used when referring to a particular or specific thing, person, group, or concept.<br>
+
+Example: <b>The</b> cat is sleeping on <b>the</b> mat.<br><br>
+
+
+&bull; Before Superlatives: <b>The</b> is used before superlative adjectives to indicate that something has the highest degree of a quality.<br>
+
+Example: She is <b>the</b> tallest girl in the class.<br><br>
+
+
+
+&bull; Unique or Known Entities: It is used when referring to something that is unique or known to both the speaker and the listener.<br>
+
+Example: "<b>The</b> sun rises in <b>the</b> east.</p>
+
+
+<p  class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">  Indefinite Articles: <b>A</b> &bull; <b>An</b><br>
+
+Here are some key points about indefinite articles:<br><br>
+
+&bull; Generalization: <b>A</b> is used before words that begin with consonant sounds, while <b>An</b> is used before words that begin with vowel sounds.<br>
+
+Example: <b>A</b> dog chased the cat. &bull; <b>An</b> apple fell from the tree.<br><br>
+
+&bull; Non-Specificity: Indefinite articles are used when referring to something non-specific or not previously mentioned.<br>
+
+Example: She wants to buy <b>a</b> car.<br><br>
+
+&bull; One of Many: They indicate that the noun refers to any one instance of a general category.<br>
+
+Example: He is looking for <b>an</b> apartment. </p>
+
+</div>
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "the.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "a.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "an.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "thebook.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "apen.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "anapple.mp3";
+
+
+</script>
+</body>
+</html>
